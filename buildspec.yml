@@ -22,6 +22,6 @@ phases:
       - echo Entered the build phase...
       - echo Build started on `date`
       - mvn install
-      - mvn 
+      - mvn -B -DskipTests clean package
     finally:
       - echo This always runs even if the install command fails
